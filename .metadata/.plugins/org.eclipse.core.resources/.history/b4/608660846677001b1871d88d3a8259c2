@@ -1,0 +1,16 @@
+package com.Q2;
+
+public class SavingsAccount extends Account {
+	private float interestRate;
+
+	public SavingsAccount() {
+		super();
+	}
+	
+	public SavingsAccount(SavingsAccount savingsAccount) {
+		this.interestRate=savingsAccount.getInterestRate();
+	}
+	
+	
+
+}

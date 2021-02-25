@@ -1,0 +1,23 @@
+package com.Q2;
+
+public class Owner {
+	private String name;
+	private Date dob;
+	private String nic;
+	public Owner() {
+		
+	}
+	public Owner(String name, String nic, Date dob) {
+		this.name = name;
+		this.dob = dob;
+		this.nic = nic;
+	}
+	public Owner(Owner owner) {
+		this.name=owner.getname();
+		this.dob=owner.getDob();
+		this.nic=owner.getNic();
+		
+	}
+	
+
+}

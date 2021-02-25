@@ -1,0 +1,6 @@
+package com.Q2;
+
+public class SavingsAccount extends Account {
+	
+
+}

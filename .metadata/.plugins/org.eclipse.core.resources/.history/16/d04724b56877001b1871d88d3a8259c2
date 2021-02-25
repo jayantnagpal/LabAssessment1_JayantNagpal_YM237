@@ -1,0 +1,6 @@
+package com.Q2;
+
+public class CurrentAccount extends Account {
+	private float minimumBalance;
+
+}

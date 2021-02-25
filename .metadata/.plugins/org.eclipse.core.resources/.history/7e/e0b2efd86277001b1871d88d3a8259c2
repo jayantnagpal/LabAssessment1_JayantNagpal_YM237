@@ -1,0 +1,8 @@
+package com.Q2;
+
+public class Account {
+	private Owner owner;
+	private float balance;
+	private String number;
+
+}

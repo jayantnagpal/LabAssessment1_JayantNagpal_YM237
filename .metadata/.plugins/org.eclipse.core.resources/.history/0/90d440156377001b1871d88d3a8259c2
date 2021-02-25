@@ -1,0 +1,37 @@
+package com.Q2;
+
+public class Account {
+	private Owner owner;
+	private float balance;
+	private String number;
+	public Account() {
+		
+	}
+	public Account(Owner owner, float balance, String number) {
+		this.owner = owner;
+		this.balance = balance;
+		this.number = number;
+	}
+	public Account(Account account) {
+		this.owner=account.getOwner();
+		this.balance=account.getBalance();
+		this.number=account.getNumber();
+	}
+	public Owner getOwner() {
+		return owner;
+	}
+	public float getBalance() {
+		return balance;
+	}
+	public String getNumber() {
+		return number;
+	}
+	public void setBalance(float balance) {
+		this.balance = balance;
+	}
+	
+	
+	
+	
+
+}

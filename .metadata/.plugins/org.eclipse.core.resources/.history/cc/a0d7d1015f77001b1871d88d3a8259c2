@@ -1,0 +1,39 @@
+package com.Q1;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class MerchandiseInventoryTest {
+	public static void main(String[] args) {
+		ArrayList<Merchandise> merchandise=new ArrayList<Merchandise>();
+		
+		String filename="input.dat";
+		File file=new File(filename);
+		
+		try {
+			Scanner scanner=new Scanner(file);
+			StringBuilder sb= new StringBuilder();
+			while(scanner.hasNextLine()) {
+				sb.append(scanner.nextLine());
+			}
+			//System.out.println(sb);
+			
+			StringTokenizer stringTokenizer= new StringTokenizer(sb.toString(),"",false);
+			int i=0;
+			while(stringTokenizer.hasMoreTokens()) {
+				StringBuilder singleMerchData=(StringBuilder)stringTokenizer.nextToken();
+				
+			}
+			scanner.close();
+			
+		} catch(FileNotFoundException ex) {
+			System.out.println("File not found!");
+		}
+		
+		System.out.println();
+	}
+
+}

@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+
+public class MerchandiseInventoryTest {
+	public static void main(String[] args) {
+		ArrayList<Merchandise> merchandise = new ArrayList<Merchandise>();
+	}
+
+}
